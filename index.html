@@ -20,65 +20,65 @@
 
 
 
-  <header>
-    <nav>
-      <div class="row">
-        <div class="col-xs-3"><img src="logo.png" width="195px"></div>
-        <div class="col-xs-7 responsive-large">
-          <ul class="menu">
-            <li>INICIO</li>
-            <li>PRODUCTOS</li>
-            <li>SERVICIOS</li>
-            <li>CONTACTO</li>
-          </ul>
+    <header>
+      <nav>
+        <div class="row">
+          <div class="col-xs-3"><img src="logo.png" width="195px"></div>
+          <div class="col-xs-7 responsive-large">
+            <ul class="menu">
+              <li>INICIO</li>
+              <li>PRODUCTOS</li>
+              <li>SERVICIOS</li>
+              <li>CONTACTO</li>
+            </ul>
+          </div>
+          <div class="col-xs-2 responsive-large"><div class="boton-primario">COTIZAR</div></div>
         </div>
-        <div class="col-xs-2 responsive-large"><div class="boton-primario">COTIZAR</div></div>
+      </nav>
+    </header>
+
+
+
+    <main>
+      <div class="slider"></div>
+      <div class="productos"></div>
+      <div class="novedades-ofertas">
+        <h1>NOVEDADES Y OFERTAS</h1>
       </div>
-    </nav>
-  </header>
+    </main>
 
 
 
-  <main>
-    <div class="slider"></div>
-    <div class="productos"></div>
-    <div class="contacto">
-    </div>
-  </main>
+    <footer>
+      <div class="footer-socilal-media"></div>
+      <div class="footer-submenu"></div>
 
+      <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v3.3'
+          });
+        };
 
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
 
-  <footer>
-    <div class="footer-socilal-media"></div>
-    <div class="footer-submenu"></div>
-
-
-    <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v3.3'
-        });
-      };
-
-      (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-
-    <!-- Your customer chat code -->
-    <div class="fb-customerchat"
-      attribution=setup_tool
-      page_id="136522247078393"
-      logged_in_greeting="Hola, ¿en qué podemos ayudarte?"
-      logged_out_greeting="Hola, ¿en qué podemos ayudarte?">
-    </div>
-  </footer>
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="136522247078393"
+        logged_in_greeting="Hola, ¿en qué podemos ayudarte?"
+        logged_out_greeting="Hola, ¿en qué podemos ayudarte?">
+      </div>
+    </footer>
 
 
 
