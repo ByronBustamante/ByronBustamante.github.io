@@ -97,8 +97,8 @@ h1{
    .outer-menu a{ color: #ffffff;}
    .outer-menu {
      position: fixed;
-     top: 4px;
-     right: 60px;
+     top: 1px;
+     right: 90px;
      z-index: 3000;
    }
    .outer-menu .checkbox-toggle {
